@@ -20,12 +20,3 @@ div {
 p, h3 {
   margin: 0 !important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.borda {
-  border: 1px solid black;
-}
