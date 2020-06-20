@@ -1,0 +1,19 @@
+footer {
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(241, 241, 241);
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  padding: 3px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 18px;
+}

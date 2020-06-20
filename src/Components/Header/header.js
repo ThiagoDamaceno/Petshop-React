@@ -9,9 +9,7 @@ export default class Header extends Component {
       <header id="header">
         <div className="container">  
           <MyNavBar logo={
-            <a href="#">
               <img src={Logo} width="140"/>
-            </a>
           }/>
         </div>
       </header>

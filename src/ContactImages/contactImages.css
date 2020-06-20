@@ -1,0 +1,20 @@
+.contact-logos-container img:nth-child(n){
+  margin: 0 6px;
+}
+
+.contact-logos-container img:nth-child(1){
+  margin: 0px;
+}
+
+.contact-logos-container img {
+  opacity: 1;
+
+  transition: 250ms;
+}
+
+.contact-logos-container img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+
+  transition: 250ms;
+}

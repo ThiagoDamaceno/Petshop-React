@@ -1,6 +1,35 @@
 .card {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding: 20px;
+  
   text-align: center;
+  
   width: 100%;
   margin: 10px;
+  
+  border-radius: 10px;
+
+  max-width: 430px;
+  min-height: 250px;
+
+  transition: 250ms;
+}
+
+.card:hover {
+  transition: 250ms;
+  transform: scale(1.06);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
