@@ -7,7 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body, #root {
+  min-height: 100vh;
+  background-color: rgb(247, 247, 247);
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.borda {
+  border: 1px solid black;
 }
