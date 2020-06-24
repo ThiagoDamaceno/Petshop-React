@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import logo from '../../img/logo.png'
-import ContactImages from '../../ContactImages/contactImages'
+import ContactImages from '../ContactImages/contactImages'
 
 export default class Foorter extends React.Component {
 
