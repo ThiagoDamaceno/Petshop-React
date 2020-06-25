@@ -17,11 +17,10 @@ export default class CardsContainer extends React.Component {
     this.getItems()
   }
 
-  getItems() {
-    axios.get('https://server-node-example.herokuapp.com/produtos')
-      .then(({ data }) => {
-        this.refreshItemsCards(data)
-      })
+  async getItems() {
+    const { data } = await axios.get('https://server-node-example.herokuapp.com/produtos')
+    
+    this.refreshItemsCards(data)
   }
 
   refreshItemsCards(data) {
