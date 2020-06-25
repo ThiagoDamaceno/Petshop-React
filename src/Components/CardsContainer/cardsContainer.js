@@ -25,19 +25,8 @@ export default class CardsContainer extends React.Component {
   }
 
   refreshItemsCards(data) {
-    let newState = []
-
-    data.forEach(element => newState.push({
-      nome: element.nome,
-      valor: element.valor,
-      desconto: element.desconto,
-      _id: element._id
-    }))
-
-    console.log(data)
-
     this.setState({
-      cardsProps: newState
+      cardsProps: data
     })
   }
 
