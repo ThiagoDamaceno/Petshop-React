@@ -9,12 +9,12 @@ import youtubeLogo from '../../img/youtube.png'
 export default class ContactImages extends React.Component {
 
   render() {
-    return(
+    return (
       <div className="contact-logos-container">
-        <img src={facebookLogo} width="51"/>
-        <img src={instagramLogo} width="34"/>
-        <img src={twitterLogo} width="38"/>
-        <img src={youtubeLogo} width="50"/>
+        <img src={facebookLogo} alt="Facebook" width="51" />
+        <img src={instagramLogo} alt="Instagram" width="34" />
+        <img src={twitterLogo} alt="Twitter" width="38" />
+        <img src={youtubeLogo} alt="Youtube" width="50" />
       </div>
     )
   }

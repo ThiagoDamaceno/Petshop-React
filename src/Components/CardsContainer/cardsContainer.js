@@ -3,7 +3,7 @@ import axios from 'axios'
 import Card from '../Card/card'
 
 export default class CardsContainer extends React.Component {
-   constructor(props) {
+  constructor(props) {
     super(props)
 
     this.state = {
@@ -19,13 +19,24 @@ export default class CardsContainer extends React.Component {
 
   async getItems() {
     const { data } = await axios.get('https://server-node-example.herokuapp.com/produtos')
-    
+
     this.refreshItemsCards(data)
   }
 
   refreshItemsCards(data) {
+    let newState = []
+
+    data.forEach(element => newState.push({
+      nome: element.nome,
+      valor: element.valor,
+      desconto: element.desconto,
+      _id: element._id
+    }))
+
+    console.log(data)
+
     this.setState({
-      cardsProps: data
+      cardsProps: newState
     })
   }
 
@@ -38,7 +49,7 @@ export default class CardsContainer extends React.Component {
       )
     }
 
-  return <div className="row">{cards}</div>
+    return <div className="row">{cards}</div>
   }
 
   render() {

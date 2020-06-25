@@ -7,10 +7,10 @@ export default class Header extends Component {
   render() {
     return (
       <header id="header">
-        <div className="container">  
+        <div className="container">
           <MyNavBar logo={
-              <img src={Logo} width="140"/>
-          }/>
+            <img src={Logo} alt="Petshop - Logo" width="140" />
+          } />
         </div>
       </header>
     )
