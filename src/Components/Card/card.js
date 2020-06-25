@@ -19,7 +19,7 @@ export default class Card extends React.Component {
     }
 
     return (
-      <div className="col-sm-12 col-md-6 col-lg d-flex justify-content-center p-0">
+      <div className="col-sm-12 col-lg-6 col-xl d-flex justify-content-center p-0">
         <div className="card">
           <h3>{this.props.properties.nome}</h3>
 

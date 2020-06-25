@@ -42,34 +42,15 @@ export default class CardsContainer extends React.Component {
   }
 
   createCards() {
-    let countCardPerRow = 4
+    let cards = []
 
-    if (this.state.cardsProps.length < countCardPerRow)
-      countCardPerRow = this.state.cardsProps.length
-
-    let rowsCards = []
-
-    let count = 0
-    for (let i = 0; i < this.state.cardsProps.length / countCardPerRow; i++) {
-      let cards = []
-      for (let j = 0; j < countCardPerRow; j++) {
-        if (this.state.cardsProps[count].nome !== undefined) {
-          cards.push(
-            <Card key={this.state.cardsProps[count]._id} properties={this.state.cardsProps[count]} />
-          )
-        }
-
-        count++
-      }
-
-      rowsCards.push(
-        <div key={i} className="row mb-3">
-          {cards}
-        </div>
+    for (let i = 0; i < this.state.cardsProps.length; i++) {
+      cards.push(
+        <Card key={this.state.cardsProps[i]._id} properties={this.state.cardsProps[i]} />
       )
     }
 
-    return rowsCards
+  return <div className="row">{cards}</div>
   }
 
   render() {
